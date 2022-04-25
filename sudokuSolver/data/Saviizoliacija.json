@@ -1,0 +1,37 @@
+[
+  {
+    "userId": 2,
+    "data": 1.05,
+    "saviizoliacijaON_OFF": 1
+  },
+  {
+    "userId": 3,
+    "data": 1.10,
+    "saviizoliacijaON_OFF": 1
+  },
+  {
+    "userId": 3,
+    "data": 1.24,
+    "saviizoliacijaON_OFF": 0
+  },
+  {
+    "userId": 1,
+    "data": 1.12,
+    "saviizoliacijaON_OFF": 1
+  },
+  {
+    "userId": 4,
+    "data": 2.02,
+    "saviizoliacijaON_OFF": 1
+  },
+  {
+    "userId": 1,
+    "data": 1.26,
+    "saviizoliacijaON_OFF": 0
+  },
+  {
+    "userId": 2,
+    "data": 1.19,
+    "saviizoliacijaON_OFF": 0
+  }
+]

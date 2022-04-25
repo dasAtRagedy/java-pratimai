@@ -1,0 +1,50 @@
+{
+  "0":
+  {
+    "userId": 0,
+    "vardas": "Aaa",
+    "telNr": 370111
+  },
+
+  "1":
+  {
+    "userId": 1,
+    "vardas": "Bbb",
+    "telNr": 370222
+  },
+
+  "2":
+  {
+    "userId": 2,
+    "vardas": "Ccc",
+    "telNr": 370333
+  },
+
+  "3":
+  {
+    "userId": 3,
+    "vardas": "Ccc",
+    "telNr": 370333
+  },
+
+  "4":
+  {
+    "userId": 4,
+    "vardas": "Ddd",
+    "telNr": 370444
+  },
+
+  "5":
+  {
+    "userId": 5,
+    "vardas": "Eee",
+    "telNr": 370555
+  },
+
+  "6":
+  {
+    "userId": 6,
+    "vardas": "Fff",
+    "telNr": 370666
+  }
+}
