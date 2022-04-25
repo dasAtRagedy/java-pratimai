@@ -5,6 +5,31 @@ public class Main {
 
     public static void main(String[] args) {
         int[][] board = {
+                {0, 0, 0, 0, 0, 0, 0, 0, 8},
+                {1, 8, 0, 0, 0, 2, 3, 0, 0},
+                {0, 6, 0, 0, 5, 7, 0, 0, 1},
+                {0, 7, 0, 9, 6, 0, 0, 0, 0},
+                {0, 9, 0, 7, 0, 4, 0, 1, 0},
+                {0, 0, 0, 0, 8, 1, 0, 4, 0},
+                {6, 0, 0, 2, 4, 0, 0, 8, 0},
+                {0, 0, 4, 5, 0, 0, 0, 9, 3},
+                {5, 0, 0, 0, 0, 0, 0, 0, 0}
+        };
+
+        /*
+        int[][] board = {
+                {8, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 3, 6, 0, 0, 0, 0, 0},
+                {0, 7, 0, 0, 9, 0, 2, 0, 0},
+                {0, 5, 0, 0, 0, 7, 0, 0, 0},
+                {0, 0, 0, 0, 4, 5, 7, 0, 0},
+                {0, 0, 0, 1, 0, 0, 0, 3, 0},
+                {0, 0, 1, 0, 0, 0, 0, 6, 8},
+                {0, 0, 8, 5, 0, 0, 0, 1, 0},
+                {0, 9, 0, 0, 0, 0, 4, 0, 0}
+        };
+
+        int[][] board = {
                 {0, 0, 0, 0, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -16,6 +41,19 @@ public class Main {
                 {0, 0, 0, 0, 0, 0, 0, 0, 0}
         };
 
+        int[][] board = {
+                {0, 0, 0, 0, 0, 0, 0, 0, 8},
+                {1, 8, 0, 0, 0, 2, 3, 0, 0},
+                {0, 6, 0, 0, 5, 7, 0, 0, 1},
+                {0, 7, 0, 9, 6, 0, 0, 0, 0},
+                {0, 9, 0, 7, 0, 4, 0, 1, 0},
+                {0, 0, 0, 0, 8, 1, 0, 4, 0},
+                {6, 0, 0, 2, 4, 0, 0, 8, 0},
+                {0, 0, 4, 5, 0, 0, 0, 9, 3},
+                {5, 0, 0, 0, 0, 0, 0, 0, 0}
+        };
+         */
+
         if (solveBoard(board)) {
             System.out.println("Solution:");
             printBoard(board);
@@ -23,23 +61,6 @@ public class Main {
         else {
             System.out.println("No solution found");
         }
-
-        /*
-        System.out.println("Original board:");
-        printBoard(board);
-        System.out.println();
-
-        shuffleBoard(board);
-        System.out.println("Shuffled board:");
-        printBoard(board);
-        System.out.println();
-
-        System.out.println("Valid board:");
-        generateValidBoard(board);
-        printBoard(board);
-        System.out.println();
-        */
-
     }
 
 
@@ -170,28 +191,6 @@ public class Main {
         }
     }
 
-    // implement quicksort for arraylist with Comparators
 
-
-
-    // generate random board
-    private static void generateRandomBoard(int[][] board) {
-        int[] arr = new int[GRID_SIZE * GRID_SIZE];
-        for (int i = 0; i < GRID_SIZE * GRID_SIZE; i++) {
-            arr[i] = i + 1;
-        }
-        quickSort(arr, 0, arr.length - 1);
-        for (int i = 0; i < GRID_SIZE; i++) {
-            for (int j = 0; j < GRID_SIZE; j++) {
-                board[i][j] = arr[i * GRID_SIZE + j];
-            }
-        }
-    }
-
-    // generate board
-    private static void generateBoard(int[][] board) {
-        generateValidBoard(board);
-        generateRandomBoard(board);
-    }
 }
 
